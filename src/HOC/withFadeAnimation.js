@@ -15,11 +15,11 @@ export const withFadeAnimation = (WrappedComponent, containerStyle) => {
     }, [])
 
     return (
-      <Animated.View
-        style={[containerStyle, { opacity: opacityAnimationValue }]}
-      >
-        <WrappedComponent {...props}></WrappedComponent>
-      </Animated.View>
+        <Animated.View
+            style={[containerStyle]}
+        >
+          <WrappedComponent {...props}></WrappedComponent>
+        </Animated.View>
     )
   }
 }
